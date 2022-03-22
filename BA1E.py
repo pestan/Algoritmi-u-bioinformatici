@@ -32,7 +32,6 @@ def dictt(dictionary,t):
 
 def clump(genome, k, L, t):
   Lmers=list()
-  kmers=dictt(kmersfrequency(genome,k), t)
   for i in range(0,len(genome)-L+1):
     Lmers.append(kmer(genome,i,L))
   s=set()
