@@ -13,10 +13,10 @@ def kMers(text, k):         # vraca kmere, nama ode trebaju samo 3-meri
     kmers.append(text[i:i+k])
   return kmers
 
-first="ACGU"
-second="ACGU"
-third="UCAG"
-letters="NNKKTTTTSSRRIIIMHHQQPPPPRRRRLLLLDDEEAAAAGGGGVVVVYY**SSSSCC*WFFLL"   # length(letters)=64
+first="ACGU"     # ovo su slova u nojuzem krugu
+second="ACGU"    # ovo su slova u drugem krugu
+third="UCAG"     # ovo su slova u trecem krugu ( nojljubicastiji )
+letters="NNKKTTTTSSRRIIIMHHQQPPPPRRRRLLLLDDEEAAAAGGGGVVVVYY**SSSSCC*WFFLL"   # length(letters)=64, ovo su sva slova oko kruga
 def Translate(abc):                 # gledamo po onemu krugu i somo za svako slovo dodojemo onoliko mista koliko ih zauzima i tako dodemo do trozeneg slova
   for i in range(0, 4):
     if (first[i]==abc[0]):
