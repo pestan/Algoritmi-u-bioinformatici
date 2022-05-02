@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1APy5D5naQ5_jrZLeDreeorvpQRGhMpPt
 """
 
-def kMers(text, k):
+def kMers(text, k):         # vraca kmere, nama ode trebaju samo 3-meri
   kmers=[]
   for i in range(0, len(text), k):
     kmers.append(text[i:i+k])
@@ -17,7 +17,7 @@ first="ACGU"
 second="ACGU"
 third="UCAG"
 letters="NNKKTTTTSSRRIIIMHHQQPPPPRRRRLLLLDDEEAAAAGGGGVVVVYY**SSSSCC*WFFLL"   # length(letters)=64
-def Translate(abc):
+def Translate(abc):                 # gledamo po onemu krugu i somo za svako slovo dodojemo onoliko mista koliko ih zauzima i tako dodemo do trozeneg slova
   for i in range(0, 4):
     if (first[i]==abc[0]):
       br=i*16
