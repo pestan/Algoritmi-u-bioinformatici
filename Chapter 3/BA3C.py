@@ -15,7 +15,6 @@ def Match(text1,text2):
 
 def Overlap(text):
   patterns=text.splitlines()
-  k=len(patterns[0])
   for i in range(0,len(patterns)):
     lista=[]
     for j in range(0,len(patterns)):
