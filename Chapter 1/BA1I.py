@@ -87,26 +87,26 @@ def FrequentWordsWithMismatchesBySorting(Text, k, d):
 
     FreqPatterns = []
 
-    '''
-    u count cemo spremati broj pojavljivanja svakog k-mera, on ima duljinu
-    4^k, što je ukupan broj svih mogućih k-mera
-    '''
+    
+    
+   
+    
     count = [0]*pow(4,k) 
     
     for i in range(0,len(Text)-k+1):
 
-        '''
-        trazim susjede svakog k-mera iz teksta
-        '''
+        
+        
+        
         neighbors = Neighbors(Text[i:i+k],d)
         
-        '''
-        svaki put kad se neka rijec pojavi kao susjed nekog k-mera iz teksta,
-        povecava se broj pojavljivanja te rijeci (uz d
-        mismatcheva) u tekstu. Npr. ako se u tekstu pojavljuju ATGT, AGGT i
-        ACGA, za d=1 svima njima susjed je ACGT pa mozemo reci da se ACGT
-        pojavljuje u tekstu 3 puta uz 1 mismatch.
-        '''
+       
+    
+    
+    
+    
+    
+    
         for neighbor in neighbors:
             index = PatternToNumber(neighbor)
             count[index] += 1
